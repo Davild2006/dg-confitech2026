@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+ul{
+    list-style: none;
+}
+body{
+    background:#f5f7fa;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family:Arial,sans-serif;
+}
+header{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.dg{
+    text-align: center;
+    margin-top: 100px;
+}
+nav{
+    /* padding: 10px 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+.fundo{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;  
+}
+.imagem{
+    margin-top: 60px;
+    background-image: url(flayer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav h1{
+    font-weight: 200px;
+}
+main{
+    margin: 0 20px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 5px;
+}
+nav ul li a{
+    display: inline-block;
+    color: #b6b3b3;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+ul li a img{
+    border-radius: 100%;
+}
+nav ul li a:hover{
+    /* background-color: blue; */
+    border-bottom: 3px solid blue;
+    color: white;
+}
+
+summary{
+    color: blue;
+}
+span{
+    color: blue;
+}
+footer{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+}
+.centro h2{
+    text-align: center;
+    color: blue;
+}
+.somos p{
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.ul2 li a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+.centro2 h4{
+    text-align: center;
+}
+.ul2 li a img{
+    height: 40px;
+    margin-right: 10px;
+}
+.ul2{
+    display: block;
+}
+.ul{
+    display: block;
+}
+.ul li{
+    padding: 10px;
+}
+.dgLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+}
+section{
+padding:100px 0;
+}
+
+.icones{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.icones a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.icones a img{
+    height: 25px;
+    border-radius: 100%;
+}
+.icones a:hover{
+    color: blue;
+    transition: 0.5s;
+}
+.block{
+    display: block;
+}
+.block li{
+    padding: 10px;
+}
+.portfolio{
+  height: 500px;
+  animation: dg 15s infinite alternate;
+  background-size: cover;
+  position: relative;
+  position: top;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.portfolio::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  
+}
+.portfolio h4 ,.portfolio p{
+  position: relative;
+  color: white;
+  z-index: -1;
+}
+  .portfolio p{
+  font-size:16px;
+  color: white;
+  }
+@keyframes dg {
+    0%{
+      background-image: url(tecnico1.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    25%{
+      background-image: url(tecnico2.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    50%{
+      background-image: url(tela1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    75%{
+      background-image: url(cerca.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    100%{
+      background-image: url(tecnicodg.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+.portfolio h4 ,.portfolio p{
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+/* RESPONSIVIDADE SMARTPHONES*/
+@media only screen and (max-width: 600px){
+    body{
+        max-width: 600px;
+        /* background-color: brown; */
+    }
+    nav{
+        display: block;
+        margin: 5px 10px;
+    }
+    nav h1{
+        font-size: 22px;
+    }
+    nav ul li a{
+    padding: 5px;
+    }
+    .centro h2{
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .conteiner2{
+        margin-top: 88px;
+    }
+    main{
+        margin: 0 5px;
+    }
+    .dgLogo{
+        display: block;
+    }
+    .tema{
+        margin-bottom: 8px;
+    }
+    .tema h2{
+        font-size: 19px;
+    }
+    .icones{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .icones p, .dg p, .tema p{
+        font-size: 13px;
+    }
+    footer{
+    height: 100%;
+    }
+
+}
+@media only screen and (min-width: 600px){
+    body{
+        min-width: 640px;
+        /* background-color: red; */
+    }
+    nav{
+        display: block;
+        margin: 5px 10px;
+    }
+    nav h1{
+        font-size: 22px;
+    }
+    nav ul li a{
+    padding: 5px;
+    }
+    .centro h2{
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .conteiner2{
+        margin-top: 88px;
+    }
+    main{
+        margin: 0 5px;
+    }
+    .dgLogo{
+        display: block;
+    }
+    .tema{
+        margin-bottom: 8px;
+    }
+    .tema h2{
+        font-size: 19px;
+    }
+    .icones{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .icones p, .dg p, .tema p{
+        font-size: 13px;
+    }
+    footer{
+    height: 100%;
+    }
+
+}
+
+/* RESPONSIVIDADE TABLET*/
+@media only screen and (min-width: 768px){
+    body{
+        min-width: 768px;
+        /* background-color: blue; */
+    }
+    nav{
+        display: flex;
+        margin: 5px 15px;
+    }
+    .conteiner2{
+        margin-top: 65px;
+    }
+    main{
+        margin: 0 15px;
+    }
+    .dgLogo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid gray;
+        padding: 10px 0;
+    }
+}
+
+
+/* RESPONSIVIDADE DESKTOP*/
+@media only screen and (min-width: 992px){
+    body{
+        min-width: 992px;
+        /* background-color: darkviolet; */
+    }
+}
+@media only screen and (min-width: 1200px){
+    body{
+        min-width: 1200px;
+        /* background-color: orangered; */
+    }
+}
+@media only screen and (min-width: 1400px){
+    body{
+        max-width: 1400px;
+        /* background-color: darkgreen; */
+    }
+}
+
+/* RESPONSIVIDADE TABLET*/
+
+/* RESPONSIVIDADE DESKTOP*/
+
+/* RESPONSIVIDADE DESKTOPS MAIORES*/
+  
